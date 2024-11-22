@@ -2,7 +2,9 @@
 
 Welcome to **Digital Electronics**, a comprehensive platform that helps you understand the fundamentals of digital electronics, with a special focus on basic logic gates. Whether you're a student learning electronics or just someone interested in exploring the world of digital circuits, this website offers interactive features to make learning both fun and engaging.
 
-![Screenshot 1](./images/screenshot1.png)
+![Screenshot 1](./images/ss.png)
+
+The above screenshot shows the one features of the website, visit now to explore more like this..😊❤️
 
 ## 🌟 Features
 
