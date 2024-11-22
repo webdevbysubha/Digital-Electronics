@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth Table - Electronics Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/truth-table.css">
+</head>
+<body>
+    <header>
+        <h1>Truth Table</h1>
+    </header>
+    
+    <main>
+        <h2>Select a Logic Gate</h2>
+        <select id="gate" onchange="generateTruthTable()">
+            <option value="">-- Select a Gate --</option>
+            <option value="and">AND</option>
+            <option value="or">OR</option>
+            <option value="not">NOT</option>
+            <option value="nand">NAND</option>
+            <option value="nor">NOR</option>
+            <option value="xor">XOR</option>
+            <option value="xnor">XNOR</option>
+        </select>
+
+        <table id="truthTable" style="display: none;">
+            <thead>
+                <tr>
+                    <th>A</th>
+                    <th id="inputBHeader">B</th> 
+                    <th>Output</th>
+                </tr>
+            </thead>
+            <tbody id="truthTableBody">
+    
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>Made with 💖 by Subha Mondal. &copy; 2024 Electronics Hub. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/subha-mondal10" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/webdevbysubha" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
+    </footer>
+
+    <script src="/JS/truth-table.js"></script>
+</body>
+</html>

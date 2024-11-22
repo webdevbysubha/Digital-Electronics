@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Gate Simulator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/simulator.css">
+</head>
+<body>
+    <header>
+        <h1>Logic Gate Simulator</h1>
+        <p>Simulate various logic gates and observe their outputs.</p>
+    </header>
+
+    <main>
+        <section class="gate-selection">
+            <h2>Select a Logic Gate</h2>
+            <select id="gate" onchange="updateGate()">
+                <option value="">-- Select a Gate --</option>
+                <option value="and">AND</option>
+                <option value="or">OR</option>
+                <option value="not">NOT</option>
+                <option value="nand">NAND</option>
+                <option value="nor">NOR</option>
+                <option value="xor">XOR</option>
+                <option value="xnor">XNOR</option>
+            </select>
+        </section>
+
+        <section id="inputs">
+            <div class="toggle-container">
+                <label>Input A:</label>
+                <div class="toggle" id="toggleA" onclick="toggleInput('A')"></div>
+            </div>
+            <div class="toggle-container">
+                <label>Input B:</label>
+                <div class="toggle" id="toggleB" onclick="toggleInput('B')"></div>
+            </div>
+        </section>
+
+        <section id="output">
+            <h2>Output: <span id="outputResult">0</span></h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with 💖 by Subha Mondal. &copy; 2024 Electronics Hub. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/subha-mondal10" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/webdevbysubha" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
+    </footer>
+
+    <script src="/JS/simulator.js"></script>
+</body>
+</html>
